@@ -20,7 +20,6 @@ Plug 'tpope/vim-sensible'
 " Sweet colorscheme
 Plug 'danilo-augusto/vim-afterglow'
 
-Plug 'sainnhe/vim-color-atlantis'
 
 " End of plugins
 call plug#end()
@@ -37,7 +36,7 @@ set termguicolors
 colorscheme atlantis
 let g:lightline = {'colorscheme' : 'atlantis'}
 
-" lightline already shows the mode in status bar so destroy redundancy
+" lightline already shows the mode in status bar
 set noshowmode
 
 
