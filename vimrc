@@ -44,7 +44,7 @@ colorscheme atlantis
 " Match lightline to sweet colorscheme
 let g:lightline = {'colorscheme' : 'atlantis'}
 
-" lightline already shows the mode in status bar so destroy redundancy
+" lightline already shows the mode in status bar
 set noshowmode
 
 
