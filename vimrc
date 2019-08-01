@@ -18,8 +18,6 @@ Plug 'pearofducks/ansible-vim', { 'do': 'cd ./UltiSnips; ./generate.py' }
 Plug 'tpope/vim-sensible'
 
 " Sweet colorscheme
-Plug 'danilo-augusto/vim-afterglow'
-
 Plug 'sainnhe/vim-color-atlantis'
 
 " End of plugins
