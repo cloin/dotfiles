@@ -48,6 +48,7 @@ let g:lightline = {'colorscheme' : 'atlantis'}
 set noshowmode
 
 
+
 " #############################
 " # Ansible and YAML settings #
 " #############################
@@ -65,6 +66,8 @@ let g:ansible_name_highlight = 'b'
 
 " Spacing
 autocmd FileType yaml setlocal ai ts=2 sw=2 et
+
+
 
 " ###########
 " # Keymaps #
