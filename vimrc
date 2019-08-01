@@ -20,6 +20,9 @@ Plug 'tpope/vim-sensible'
 " Sweet colorscheme
 Plug 'sainnhe/vim-color-atlantis'
 
+" Easymotion https://github.com/easymotion/vim-easymotion/tree/85e90c9759e14633d878ed534ef313876ab96555
+Plug 'easymotion/vim-easymotion'
+
 " End of plugins
 call plug#end()
 
