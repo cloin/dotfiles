@@ -36,8 +36,12 @@ set cursorline
 
 " Line numbers relative to the current line
 " set relativenumber
+
 set termguicolors
+
+" Set sweet colorscheme
 colorscheme atlantis
+" Match lightline to sweet colorscheme
 let g:lightline = {'colorscheme' : 'atlantis'}
 
 " lightline already shows the mode in status bar so destroy redundancy
