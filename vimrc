@@ -85,4 +85,4 @@ inoremap kj <esc>
 
 " move to beginning/end of line
 nnoremap B ^
-nnoremap E $<Paste>
+nnoremap E $
