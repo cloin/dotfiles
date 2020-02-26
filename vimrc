@@ -11,6 +11,9 @@ Plug 'scrooloose/nerdtree'
 " Vim custom status bar with nice default configuration
 Plug 'itchyny/lightline.vim'
 
+" Tmux status bar that uses theme set in lightline.vim
+Plug 'edkolev/tmuxline.vim'
+
 " Ansible syntax highlighting
 Plug 'pearofducks/ansible-vim', { 'do': 'cd ./UltiSnips; ./generate.py' }
 
@@ -18,7 +21,7 @@ Plug 'pearofducks/ansible-vim', { 'do': 'cd ./UltiSnips; ./generate.py' }
 Plug 'tpope/vim-sensible'
 
 " Sweet colorscheme
-Plug 'sainnhe/vim-color-atlantis'
+" Plug 'sainnhe/vim-color-atlantis'
 
 " Easymotion https://github.com/easymotion/vim-easymotion/tree/85e90c9759e14633d878ed534ef313876ab96555
 Plug 'easymotion/vim-easymotion'
@@ -40,15 +43,18 @@ set cursorline
 " Line numbers relative to the current line
 " set relativenumber
 
-set termguicolors
+" set termguicolors
 
 " Set sweet colorscheme
-colorscheme atlantis
+" colorscheme atlantis
 " Match lightline to sweet colorscheme
-let g:lightline = {'colorscheme' : 'atlantis'}
+let g:lightline = {'colorscheme' : 'nord'}
 
 " lightline already shows the mode in status bar
 set noshowmode
+
+" nerdtree now defaults to <leader><leader>, revert to old
+map <Leader> <Plug>(easymotion-prefix)
 
 
 
@@ -86,3 +92,27 @@ inoremap kj <esc>
 " move to beginning/end of line
 nnoremap B ^
 nnoremap E $
+
+
+" ##############
+" # easymotion #
+" ##############
+
+" easymotion minimal https://github.com/easymotion/vim-easymotion
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" Jump to anywhere you want with minimal keystrokes, with just one key
+" binding.
+" `s{char}{label}`
+nmap s <Plug>(easymotion-overwin-f)
+" or
+" `s{char}{char}{label}`
+" Need one more keystroke, but on average, it may be more comfortable.
+nmap s <Plug>(easymotion-overwin-f2)
+
+" Turn on case-insensitive feature
+let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
